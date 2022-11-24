@@ -35,8 +35,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(244, 206, 136);
   font-family: 'Source Sans Pro', sans-serif;
+  background: #f0cb87 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAA2BAMAAACy8k0FAAAAG1BMVEUAAAD0zozsxoTkwoT0zoT0yoTkxoTsyoTkvoQRMYnpAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAw9JREFUOI0dU8t66kYMnkcoDIm3eMZ4usTS2MqSYBJvA6Z4G2zO8RZGjtV92tPX7rRrfdJ/lUKhN905vhEu7YK8l61Cfdq8eeJxWTbF3o6F3SmX+C8ZugKslONxOsz9h5o4x00IKAC5Tg745LfqnDsKQVPDqUzFsw423rNDb8Vjwle0wdLV/qYyXR7fCd5shXCSuQi0ViGMAOwFqBsMSxHmnUoxKfY18lTIw6ebDNKdAs0nLCtTozEbzMvXuGsqA+L6qgo44WBftNuqx/s+WDM/NCeuJ5f68KnmC1b5sMJHqMDyoge4KxQNnp4RJ64knLvTvFaYV4HElYKtPIl0OX+oud18PU1QvqaU19KUmrbquBdzcP2vvq8H0/VhD2uVvh54aib7DI+/01sd+hAxzO0szR4ywa9bZbvWrdVgbeTQZqJxRc0VJI86pNG1WP8XoxtvM57SyGUpDr4cLgtXtVVBG7NVYE20nRnl6q0dj1hsVdIHyAiPMEPCJ5Y33CmymP7gZEZBerkU8tR8qrHofxgELo1kco5n/s+oar1QuW+PRw/pYF/v6kCUZ4BRmIcOf4aV/1QdwWRxLBFrQVPBPH0oQN1K0ZIeGIZxogHv6nd7HblhXOHmAfVPabKtMugSicTBX/6AOAv5f5mjnW1NARtfMA3DsFUFPwK33wvet9EUxDzqdWxWlF/m1RkxlPn5hlHHnnnmzJzsCHIib0879Rq7stez6NFGgtUpSMQoE7B9WG5QGPqiqOqYR2BHNXQ2zH1LB9PxXRVHMchWHjKEP8U0Zryr3BeS+RlqAo3+YHveqkX+bOELkUK27GlFFPs3AXEubmNbA3PRZTZ6KglmiZBhRIYm1hnXyo8pPzTu41ONuqX3DnbqsrDPxJHt1Ke3DoyGDxWXSo/ZIQvhrewTW0ZcG9u6qIowcOCXx/eijx0fpwHn03txZV4N4hzlO6XpiHhOuXLBEYCby0/lhBxzcAMLkYyUT3fVE4SYGDPrPiWJQawVE3CG1PfHU7jE78L5Q4VkIUHHd/iOPmfmnwzX/wKMMxWNv8xMnwAAAABJRU5ErkJggg==);
 }
 .intro {
   color: #B06C64ff;
@@ -64,9 +64,10 @@ ul {
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
 -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
 box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
-
 }
-
+* {
+  scroll-behavior: smooth;
+}
 
 /******************************************
 /* NAV
@@ -116,7 +117,6 @@ nav img {
 nav #logo {
   justify-self: flex-end;
 }
-
 /******************************************
 /* main
 /*******************************************/
@@ -131,7 +131,6 @@ nav #logo {
 #main input {
   width: 15vw;
 }
-
 #socials {
   display: flex;
   margin-top: 2vh;
@@ -259,6 +258,7 @@ box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
 #comentarios img{
   border-radius: 50%;
   width: 12vw;
+  border: 4px double black;
 }
 #comentarios h4, #comentarios h3{
   font-family: 'Roboto', sans-serif;
