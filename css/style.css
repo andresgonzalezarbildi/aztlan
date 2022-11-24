@@ -35,25 +35,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(244, 206, 136);
+  font-family: 'Source Sans Pro', sans-serif;
 }
-#page {
-  margin: 0 7vw;
-  border: 1px solid #0C0102ff;
+.intro {
+  color: #B06C64ff;
 }
-
+h2 {
+  font-size: 2.2rem;
+}
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
 /******************************************
 /* LAYOUT
-/*******************************************/
-nav ul{
-  width: 50vw;
-  height: 8vh;
-  display: flex;
-  justify-content: space-around;
-}
-
-
-/******************************************
-/* main
 /*******************************************/
 #wall {
   background-image: url("/images/aztlan\ wall.png");
@@ -68,6 +67,60 @@ box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
 
 }
 
+
+/******************************************
+/* NAV
+/*******************************************/
+nav {
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  color: wheat;
+}
+nav ul{
+  width: 70vw;
+  height: 6vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav li {
+  border-right: 1px solid #f5deb3ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5vh 4vw;
+}
+nav li:first-child {
+  border: none;
+}
+nav li:first-child + li {
+  border-left: 1px solid #f5deb3ac;
+}
+nav li:hover {
+  background-color: rgb(15, 15, 15);}
+nav li:first-child:hover {
+  padding: 0 4vw;
+  transform: scale(0.9);
+  background-color: rgb(0, 0, 0);
+}
+nav a {
+  text-decoration: none;
+  color: wheat;
+}
+nav img {
+  max-width: 10vh;
+}
+nav #logo {
+  justify-self: flex-end;
+}
+
+/******************************************
+/* main
+/*******************************************/
+
 #main {
   margin: 15vh 0 10vh 7vw;
   height: 25vh;
@@ -81,6 +134,10 @@ box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
 
 #socials {
   display: flex;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  width: 30%;
+  justify-content: space-around;
 }
 
 /******************************************
@@ -94,11 +151,13 @@ box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
   -webkit-box-shadow: 0px 0px 24px 18px rgba(0,0,0,0.73);
 -moz-box-shadow: 0px 0px 24px 18px rgba(0,0,0,0.73);
 box-shadow: 0px 0px 24px 18px rgba(0,0,0,0.73);
+font-size: 1.1rem;
+color: wheat;
 }
 #aboutus div {
   margin: 5vh 2vw 5vh 5vw;
   height: 40vh;
-  width: 40vw;
+  width: 35vw;
 }
 
 
@@ -126,17 +185,125 @@ box-shadow: 0px 0px 24px 18px rgba(0,0,0,0.73);
   width: 17vw;
   height: 17vw;
   border-radius: 5%;
-
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
+-moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
+box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.73);
 }
 #platos img:hover {  
   border: 2px solid rgba(255, 208, 0, 0.845);
   transform: scale(1.1);
 }
 
+
+/******************************************
+/* RESERVA
+/*******************************************/
+#reserva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#reserva section {
+  padding: 5vh 5vw;
+  border: 5px double black;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#reserva .agenda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#reserva .agenda img {
+  width: 25vw;
+  margin: 2vh 2vw;
+  border-radius: 14px;
+}
+.agenda i:hover {
+  transform: scale(1.2);
+}
+#horarios, #horarios section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#horarios * {
+  margin: 0 2vw;
+}
+
+#reserva h2 span {
+  border-bottom: 3px solid black;
+}
+#horarios div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#horarios h3 {
+  margin-bottom: 2vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.728);
+}
+
+/******************************************
+/* COMENTARIOS
+/*******************************************/
+#comentarios {
+  width: 50%;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#comentarios img{
+  border-radius: 50%;
+  width: 12vw;
+}
+#comentarios h4, #comentarios h3{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(30, 29, 29);
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+footer {
+  height: 8vh;
+  width: 100vw;
+  background-color: rgba(33, 32, 32, 0.452);
+}
+footer ul {
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10vw;
+  align-items: center;
+  list-style: none;
+}
+footer li {
+  text-decoration: none;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-#main, #aboutus, #carta, #reserva, #comentarios {
+.puntos {
+  color: rgb(160, 109, 41);
+  display: inline-block;
+  font-size: 5rem;
+  margin: 0 auto;
+  vertical-align: baseline;
+}
+.grande {
+  color: rgb(160, 109, 41);
+  display: inline-block;
+  font-size: 8rem;
+  
+}
+
+
+/* #main, #aboutus, #carta, #reserva, #comentarios {
   border: 1px solid black;
 
-}
+} */

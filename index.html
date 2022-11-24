@@ -11,29 +11,33 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Source+Sans+Pro:wght@400;700&display=swap"
+			rel="stylesheet">
 	</head>
 	<body>
 		<nav>
 			<ul>
-				<li><a href="#main">Logo</a></li>
-				<li><a href="#main">Inicio</a></li>
-				<li><a href="#aboutus">Quienes somos</a></li>
-				<li><a href="carta">Carta</a></li>
-				<li><a href="reserva">Reserva</a></li>
-				<li><a href="comentarios">Reseñas</a></li>
+				<li id="logo"><a href="#wall"><img src="images/skull_e-removebg-preview.png" alt=""></a></li>
+				<li><a href="#wall">Inicio</a></li>
+				<li><a href="#page">Nosotros</a></li>
+				<li><a href="#carta">Carta</a></li>
+				<li><a href="#reserva">Reserva</a></li>
+				<li><a href="#comentarios">Reseñas</a></li>
 				<li><a href="#">Buscar</a></li>
 			</ul>
 		</nav>
 		<div id="wall">
 			<section id="main">
 				<h1>Bienvenido a Aztlan<br> Comida mexicana</h1>
-				<span>lupa</span>
+				<i class="fa-solid fa-magnifying-glass"></i>
 				<input type="text" name="buscador" id="Buscar">
-				<span>Ubicacion flechita</span>
+				<span><i class="fa-solid fa-location-dot"></i> Ubicacion </span><i class="fa-solid fa-caret-down"></i>
 				<div id="socials">
-					<div>icon f</div> <span>16k</span>
-					<div>icon t</div> <span>10k</span>
-					<div>icon i</div> <span>25k</span>
+					<div><i class="fa-brands fa-facebook-f"></i> <span> 16k</span></div>
+					<div><i class="fa-brands fa-twitter"></i> <span> 10k</span></div>
+					<div><i class="fa-brands fa-instagram"></i> <span> 25k</span></div>
 				</div>
 			</section>
 		</div>
@@ -46,7 +50,7 @@
 					<h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, quia alias repellat ipsum earum corporis aperiam illo excepturi, sit eum deserunt, officia veritatis voluptatem? Dolor?</h4>
 					<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci atque iste nam expedita mollitia reiciendis quia accusantium nesciunt assumenda? Accusamus tempora neque, ad natus accusantium quasi!
 					</h4>
-					<div id="button"><a href="menu">Descubre nuestros platos</a></div>
+					<div id="button"><a href="carta">Descubre nuestros platos</a></div>
 				</div>
 			</section>
 			<section id="carta">
@@ -69,40 +73,49 @@
 						<img src="images/aztlan comida mexicana (7).png" alt="foto de comida">
 						<img src="images/aztlan comida mexicana (8).png" alt="foto de comida">
 					</div>
-						<span class="puntos">..<div class="punto grande">..</div></span>
+						<span class="puntos">..<div class="puntos grande">.</div>..</span>
 				</section>
 			</section>
 
 			<section id="reserva">
 				<span class="intro">Reservas</span>
 				<h2>Reservas</h2>
-				<h3>Llamanos al 098157198</h3>
-				<div id="horarios">
-					<div>
-						<h5>Lunes a Jueves</h5>
-						<h4>12:00 a 14:30 y 20:00 a 22:00</h4>
+				<section>
+					<h2>Llamanos al <span>+598 98 157 198</span></h2>
+					<div id="horarios">
+						<div>
+							<h3>Lunes a Jueves</h3>
+							<h4>12:00 a 14:30 <br> 20:00 a 22:00</h4>
+						</div>
+						<div>
+							<h3>Viernes a Domingos</h3>
+							<h4>12:00 a 16:00 <br> 20:00 a 24:00</h4>
+						</div>
 					</div>
-					<div>
-						<h5>Viernes a Domingos</h5>
-						<h4>12:00 a 16:00 y 20:00 a 24:00</h4>
+					<div class="agenda">
+						<i class="fa-solid fa-arrow-left fa-2xl"></i>
+						<img src="images/calendario.png" alt="">
+						<i class="fa-solid fa-arrow-right fa-2xl"></i>
 					</div>
-				</div>
-				<div>
-					<span>flecha</span>
-					<img src="" alt="">
-					<span>flecha</span>
-				</div>
+				</section>
+				<span class="puntos">..<div class="puntos grande">.</div>..</span>
 
 			</section>
 			<section id="comentarios">
 				<span class="intro">Reseñas</span>
-				<h2>Nuestras reseñas</h2>
-				<img src="#" alt="">
-				<h3>John Doe</h3>
-				<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore perspiciatis rerum, a minus fuga, pariatur quis laborum reprehenderit est doloribus architecto nihil. Ullam ratione et saepe maiores laudantium ducimus.</h4>
-				<span class="puntos">..<div class="punto grande">..</div></span>
+				<h2>Ultima reseña</h2>
+				<img src="/images/Jane Doe.png" alt="picture of costumer">
+				<h3>Jane Doe</h3>
+				<h4>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem labore perspiciatis rerum, a minus fuga, pariatur quis laborum reprehenderit est doloribus architecto nihil. Ullam ratione et saepe maiores laudantium ducimus."</h4>
 			</section>
+			<footer>
+				<ul class="copyright">
+					<li>&copy; <a href="https://andresgonzalezarbildi.netlify.app">Andres Gonzalez</a>. Todos los derechos reservados.</li>
+					<li>Diseño: <a href="https://andresgonzalezarbildi.netlify.app">Andres Gonzalez</a></li>
+				</ul>
+			</footer>
 		</div>
+		<script src="https://kit.fontawesome.com/952e5f1e69.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/main.js">
 		</script>
 	</body>
