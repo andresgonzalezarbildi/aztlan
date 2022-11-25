@@ -3,7 +3,7 @@ A website for a local restaurant, trying to show themselvse a little bit
 
 **Visit us** (https://aztlancomidamexicana.netlify.app/)
 
-![alt tag](https://github.com/andresgonzalezarbildi/aztlan/blob/main/WebSite%20Demo%20Gif.gif?raw=true)
+![alt tag](https://github.com/andresgonzalezarbildi/aztlan/blob/main/Website%20Demo%20Gif.gif?raw=true)
 
 ## How It's Made:
 
